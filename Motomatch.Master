@@ -1,68 +1,80 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Motomatch.master.cs" Inherits="MotoMatch.Motomatch" %>
 
 <!DOCTYPE html>
-
 <html>
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Motomatch Enterprises</title>
+    <title>MotoMatch</title>
+
+    <!-- External CSS -->
     <link href="stylesheet.css" rel="stylesheet" type="text/css" />
-    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
-    </asp:ContentPlaceHolder>
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
 </head>
+
 <body>
-   <form runat="server">
-        <asp:ScriptManager runat="server"></asp:ScriptManager>
-        
-        <!-- Navigation -->
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="nav-left">
-                    <a href="~/Home.aspx" runat="server" class="logo">MotorMatch</a>
-                    <a href="~/Home.aspx" runat="server" class="nav-link">Home</a>
-                    <a href="~/Vehicles.aspx" runat="server" class="nav-link">Vehicles</a>
-                    <a href="~/Pages/MotorBikes.aspx" runat="server" class="nav-link">Motor Bikes</a>
-                    <a href="~/Pages/About.aspx" runat="server" class="nav-link">About</a>
-                </div>
-                <div class="nav-right">
-                    <a href="~/Pages/Login.aspx" runat="server" class="auth-btn">Log In</a>
-                    <a href="~/Pages/Signup.aspx" runat="server" class="auth-btn primary">Sign Up</a>
-                </div>
-            </div>
-        </nav>
+<form runat="server">
 
-        <!-- Main Content PlaceHolder -->
-        <main class="main-content">
-            <div class="content-wrapper">
-                <asp:ContentPlaceHolder ID="MainContent" runat="server">
-                </asp:ContentPlaceHolder>
-            </div>
-        </main>
+    <asp:ScriptManager runat="server"></asp:ScriptManager>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-container">
-                <div class="footer-brand">
-                    <h3>MotorMatch</h3>
-                    <p>Redefining luxury automotive commerce...</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact Us</h4>
-                    <div class="contact-info">
-                        <span>📞 +1 (888) 555-MOTOR</span>
-                    </div>
-                    <div class="contact-info">
-                        <span>✉️ concierge@motormatch.com</span>
-                    </div>
-                </div>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+
+            <!-- LEFT SIDE -->
+            <div class="nav-left">
+                <a href="Home.aspx" class="logo">MotoMatch</a>
+
+                <a href="Home.aspx" class="nav-link">Home</a>
+                <a href="Vehicles.aspx" class="nav-link">Vehicles</a>
+                <a href="Motorbike.aspx" class="nav-link">Motorbikes</a>
+               
             </div>
-            <div class="footer-bottom">
-                <div class="copyright">
-                    <span>© 2026 MotorMatch Enterprises. All rights reserved.</span>
-                </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="nav-right">
+                <!-- Empty for now (clean look) -->
+                <!-- You can later add user profile dropdown here -->
             </div>
-        </footer>
-    </form>
+
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <h3>MotoMatch</h3>
+                <p>Drive your dream. Ride your freedom.</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="Vehicles.aspx">Vehicles</a>
+                <a href="Motorbike.aspx">Motorbikes</a>
+                
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📞 +254 796 808 950</p>
+                <p>✉️ support@motomatch.com</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 MotoMatch. All rights reserved.</span>
+        </div>
+    </footer>
+
+</form>
 </body>
 </html>

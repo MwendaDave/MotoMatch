@@ -11,61 +11,79 @@ namespace MotoMatch
 {
 
 
-    public partial class Vehicles
+    public partial class Admin
     {
 
         /// <summary>
-        /// ddlBrand control.
+        /// txtName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlBrand;
+        protected global::System.Web.UI.WebControls.TextBox txtName;
 
         /// <summary>
-        /// ddlYear control.
+        /// txtBrand control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlYear;
+        protected global::System.Web.UI.WebControls.TextBox txtBrand;
 
         /// <summary>
-        /// txtMinPrice control.
+        /// ddlCategory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMinPrice;
+        protected global::System.Web.UI.WebControls.DropDownList ddlCategory;
 
         /// <summary>
-        /// txtMaxPrice control.
+        /// txtPrice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMaxPrice;
+        protected global::System.Web.UI.WebControls.TextBox txtPrice;
 
         /// <summary>
-        /// btnFilter control.
+        /// txtYear control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnFilter;
+        protected global::System.Web.UI.WebControls.TextBox txtYear;
 
         /// <summary>
-        /// rptVehicles control.
+        /// txtImage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptVehicles;
+        protected global::System.Web.UI.WebControls.TextBox txtImage;
+
+        /// <summary>
+        /// btnAdd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAdd;
+
+        /// <summary>
+        /// gvVehicles control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvVehicles;
     }
 }

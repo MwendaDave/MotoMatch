@@ -7,20 +7,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Motormatch
+namespace MotoMatch
 {
 
 
-    public partial class master
+    public partial class Motorbike
     {
 
         /// <summary>
-        /// rptCars control.
+        /// rptBikes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptCars;
+        protected global::System.Web.UI.WebControls.Repeater rptBikes;
     }
 }

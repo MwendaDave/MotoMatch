@@ -11,61 +11,61 @@ namespace MotoMatch
 {
 
 
-    public partial class Vehicles
+    public partial class Register
     {
 
         /// <summary>
-        /// ddlBrand control.
+        /// txtName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlBrand;
+        protected global::System.Web.UI.WebControls.TextBox txtName;
 
         /// <summary>
-        /// ddlYear control.
+        /// txtEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlYear;
+        protected global::System.Web.UI.WebControls.TextBox txtEmail;
 
         /// <summary>
-        /// txtMinPrice control.
+        /// txtPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMinPrice;
+        protected global::System.Web.UI.WebControls.TextBox txtPassword;
 
         /// <summary>
-        /// txtMaxPrice control.
+        /// txtConfirm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMaxPrice;
+        protected global::System.Web.UI.WebControls.TextBox txtConfirm;
 
         /// <summary>
-        /// btnFilter control.
+        /// btnRegister control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnFilter;
+        protected global::System.Web.UI.WebControls.Button btnRegister;
 
         /// <summary>
-        /// rptVehicles control.
+        /// lblMessage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptVehicles;
+        protected global::System.Web.UI.WebControls.Label lblMessage;
     }
 }
