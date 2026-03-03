@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Motomatch.master.cs" Inherits="MotoMatch.Motomatch" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motomatch Enterprises</title>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+   <form runat="server">
+        <asp:ScriptManager runat="server"></asp:ScriptManager>
+        
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-left">
+                    <a href="~/Home.aspx" runat="server" class="logo">MotorMatch</a>
+                    <a href="~/Home.aspx" runat="server" class="nav-link">Home</a>
+                    <a href="~/Vehicles.aspx" runat="server" class="nav-link">Vehicles</a>
+                    <a href="~/Pages/MotorBikes.aspx" runat="server" class="nav-link">Motor Bikes</a>
+                    <a href="~/Pages/About.aspx" runat="server" class="nav-link">About</a>
+                </div>
+                <div class="nav-right">
+                    <a href="~/Pages/Login.aspx" runat="server" class="auth-btn">Log In</a>
+                    <a href="~/Pages/Signup.aspx" runat="server" class="auth-btn primary">Sign Up</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content PlaceHolder -->
+        <main class="main-content">
+            <div class="content-wrapper">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <h3>MotorMatch</h3>
+                    <p>Redefining luxury automotive commerce...</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <div class="contact-info">
+                        <span>📞 +1 (888) 555-MOTOR</span>
+                    </div>
+                    <div class="contact-info">
+                        <span>✉️ concierge@motormatch.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <span>© 2026 MotorMatch Enterprises. All rights reserved.</span>
+                </div>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>
